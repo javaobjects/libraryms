@@ -88,6 +88,7 @@ Windows
     +- LICENSE -- 开源软件的授权协议
     +- mvnw --  Maven Wrapper 的脚本，作用是为了在开发团队中使用一致的 Maven 版本，以及简化在新环境中安装 Maven 的步骤 用于 Linux 或 macOS 系统
     +- mvnw.cmd --  Maven Wrapper 的脚本，作用是为了在开发团队中使用一致的 Maven 版本，以及简化在新环境中安装 Maven 的步骤 用于 Windows 系统
+    +- pom.xml -- 用于声明和管理项目依赖的XML文件
     +- README.md -- 项目的相关信息文档
  +- libraryms-Vue -- 图书管理系统客户端
      +- build -- 用于存放打包构建相关的配置文件和脚本
