@@ -2,7 +2,7 @@
   "name": "sbm",
   "version": "1.0.0",
   "description": "A Vue.js project",
-  "author": "yangyuscript <1837475870@qq.com>",
+  "author": "xianxian <511948469@qq.com>",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
