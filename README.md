@@ -29,7 +29,7 @@ Windows
 | Mysql        | 5.5.27    | 关系型数据库                   |
 | Apache-maven | 3.9.0     | Java 项目管理和构建工具           |
 | Nvm          | 1.10      | Node.js 版本管理器            |
-| Node         | 8.12.0    | Node.js JavaScript 运行时环境 |
+| Node         | 18.15.0   | Node.js JavaScript 运行时环境 |
 
 #### 开发工具
 
@@ -201,6 +201,16 @@ Windows
 - 1.数据库：mysql5.6执行以下脚本,前台项目下脚本文件--db_appapidemo.sql  （数据库脚本在前台项目下）
 - 2.后台启动：导入项目，进入控制台，到项目所在路径，执行命令：mvn clean spring-boot:run
 - 3.前台启动：导入项目，进入控制台，到项目所在路径，执行命令：npm run dev，访问地址：http://localhost:8075  进入到登录界面，打开数据库中t_reader表获取用户名和密码
+
+![](libraryms-Vue/static/sb-1.png)
+
+![](libraryms-Vue/static/sb-2.png)
+
+![](libraryms-Vue/static/vue-1.png)
+
+![](libraryms-Vue/static/vue-2.png)
+
+![](libraryms-Vue/static/vue-3.png)
 
 #### 效果展示
 ![](https://github.com/yangyuscript/Vue-iView-demo/blob/master/static/1.png?raw=true)
