@@ -212,6 +212,8 @@ Windows
 
 ![](libraryms-Vue/static/vue-3.png)
 
++ 现在登录有bug 登录不进去
+
 #### 效果展示
 ![](https://github.com/yangyuscript/Vue-iView-demo/blob/master/static/1.png?raw=true)
 ![](https://github.com/yangyuscript/Vue-iView-demo/blob/master/static/2.png?raw=true)
