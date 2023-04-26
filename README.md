@@ -29,7 +29,7 @@ Windows
 | Mysql        | 5.5.27    | 关系型数据库                   |
 | Apache-maven | 3.9.0     | Java 项目管理和构建工具           |
 | Nvm          | 1.10      | Node.js 版本管理器            |
-| Node         | 18.15.0   | Node.js JavaScript 运行时环境 |
+| Node         | 8.12.0    | Node.js JavaScript 运行时环境 |
 
 #### 开发工具
 
@@ -200,7 +200,7 @@ Windows
 #### 项目启动
 - 1.数据库：mysql5.6执行以下脚本,前台项目下脚本文件--db_appapidemo.sql  （数据库脚本在前台项目下）
 - 2.后台启动：导入项目，进入控制台，到项目所在路径，执行命令：mvn clean spring-boot:run
-- 3.前台启动：导入项目，进入控制台，到项目所在路径，执行命令：npm run dev，访问地址：http://localhost:8075  进入到登录界面，打开数据库中t_reader表获取用户名和密码
+- 3.前台启动：导入项目，进入控制台，到项目所在路径，执行命令：npm install 后 npm run dev，访问地址：http://localhost:8075  测试账号：super 密码： super
 
 ![](libraryms-Vue/static/sb-1.png)
 
@@ -212,7 +212,7 @@ Windows
 
 ![](libraryms-Vue/static/vue-3.png)
 
-+ 现在登录有bug 登录不进去
++ 目前里面各种bug懒得改了。。。。
 
 #### 效果展示
 ![](https://github.com/yangyuscript/Vue-iView-demo/blob/master/static/1.png?raw=true)
@@ -224,3 +224,27 @@ Windows
 ![](https://github.com/yangyuscript/Vue-iView-demo/blob/master/static/7.png?raw=true)
 ![](https://github.com/yangyuscript/Vue-iView-demo/blob/master/static/8.png?raw=true)
 ![](https://github.com/yangyuscript/Vue-iView-demo/blob/master/static/9.png?raw=true)
+
+#### 解决bug
+
+1. 解决端口被占用的问题,如下图所示
+
+![](readme/sb-2.png)
+
++ 解决方法，打开Windows PowerShell 输入如下的命令查看被占用的端口
+
+```
+netstat -ano | findstr :8080
+```
+
++ 输入如下的命令，杀掉进程
+
+```
+taskkill /F /PID 进程ID
+
+在这里进行id为8080
+
+taskkill /F /PID 14696
+```
+
+![](readme/bug-1.png)

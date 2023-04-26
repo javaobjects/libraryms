@@ -93,7 +93,7 @@ export default {
       this.loading = true
       this.$refs[name].validate((valid) => {
         if (valid) {
-          if (that.verifyCode === that.formItem.code) {
+          if (that.verifyCode.toLowerCase() === that.formItem.code) {
             that.$http.post(that.GLOBAL.serverPath + '/excise/login',
               {
                 account: that.formItem.account,

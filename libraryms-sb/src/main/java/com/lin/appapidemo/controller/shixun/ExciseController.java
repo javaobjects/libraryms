@@ -35,25 +35,26 @@ public class ExciseController {
 
     @RequestMapping(value = "/login",method = RequestMethod.POST)
     public Map<String,Object> login(@RequestParam("account")String account,@RequestParam("password")String password){
-        Map<String,Object> map=new HashMap<>();
-        Reader reader=readerMapper.selectWholeByAccount(account);
-        if(reader!=null){
-            System.out.println("hahaha"+reader.getPassword().equals(password));
-            if(reader.getPassword().equals(password)){
-                System.out.println("hahaha"+reader.getPassword().equals(password));
-                map.put("result","yes");
-                map.put("loginUser",reader);
-                if(reader.getCondi()==0){
-                    map.put("condi",0);
-                }else if(reader.getCondi()==1){
-                    map.put("condi",1);
-                }else{
-                    map.put("condi",2);
+        Map<String, Object> map = new HashMap<>();
+        Reader reader = readerMapper.selectWholeByAccount(account);
+        System.out.println("reader: " + reader);
+        if (reader != null) {
+            System.out.println("hahaha" + reader.getPassword().equals(password));
+            if (reader.getPassword().equals(password)) {
+                System.out.println("hahaha" + reader.getPassword().equals(password));
+                map.put("result", "yes");
+                map.put("loginUser", reader);
+                if (reader.getCondi() == 0) {
+                    map.put("condi", 0);
+                } else if (reader.getCondi() == 1) {
+                    map.put("condi", 1);
+                } else {
+                    map.put("condi", 2);
                 }
                 return map;
             }
         }
-        map.put("result","no");
+        map.put("result", "no");
         return map;
     }
 
